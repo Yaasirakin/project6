@@ -75,7 +75,7 @@ const Hero = () => {
             <img src={mdhow} alt="How We Work" className="w-auto h-[130px]" />
           </div>
           <div className="md:hidden absolute top-0 right-0">
-            <img src={mobilehow} alt="How We Work" className="w-auto h-[230px]" />
+            <img src={mobilehow} alt="How We Work" className="w-auto h-[200px]" />
 
           </div>
           <h1 className="font-serif-custom text-white text-3xl md:text-5xl font-bold leading-tight">
