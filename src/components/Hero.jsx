@@ -2,14 +2,15 @@ import React from "react";
 import snappy from "../assets/image/snappy.svg";
 import price from "../assets/image/price.svg";
 import people from "../assets/image/people.svg";
+import mdhow from "../assets/image/mdhow.svg";
+import mobilehow from "../assets/image/mobilehow.svg";
 
 const Hero = () => {
   return (
     <div className="bg-[#FAFAFA]">
-      {/* Different Section */}
-      <section className="min-h-screen flex items-center justify-center px-6 md:px-[70px] py-16 md:py-20">
+      <section className="min-h-screen flex items-center justify-center px-6 md:px-20 md:mt-36 py-16 md:py-20">
         <div className="max-w-6xl w-full">
-          {/* Heading */}
+
           <h1 className="font-serif-custom text-4xl md:text-6xl text-[#1a1a1a] font-bold text-center md:text-left mb-16">
             We're different
           </h1>
@@ -68,15 +69,21 @@ const Hero = () => {
       </section>
 
       {/* CTA Section */}
-      <div className="px-6 md:px-[70px] pb-16">
-        <div className="bg-[#2D2640] flex flex-col md:flex-row items-center justify-between text-center md:text-left px-8 md:px-12 py-12 gap-8">
-          <h1 className="font-serif-custom text-white text-4xl md:text-5xl font-bold leading-tight">
+      <div className="px-2 md:px-[70px] pb-16">
+        <div className="bg-[#2D2640] flex flex-col md:flex-row items-center justify-between text-center md:text-left px-10 md:px-12 py-10 gap-8 relative z-10 h-fit">
+          <div className="hidden md:block absolute top-0 right-0">
+            <img src={mdhow} alt="How We Work" className="w-auto h-[130px]" />
+          </div>
+          <div className="md:hidden absolute top-0 right-0">
+            <img src={mobilehow} alt="How We Work" className="w-auto h-[250px]" />
+
+          </div>
+          <h1 className="font-serif-custom text-white text-3xl md:text-5xl font-bold leading-tight">
             Find out more
-            <br />
             about how we work
           </h1>
 
-          <button className="border-2 border-white px-8 py-3 text-white uppercase tracking-[3px] hover:bg-white hover:text-[#2D2640] transition duration-300">
+          <button className="border-2 border-white px-8 py-3 text-white uppercase tracking-[3px] hover:bg-white hover:text-[#2D2640] text-[14px] transition duration-300">
             How We Work
           </button>
         </div>
